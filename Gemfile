@@ -33,7 +33,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # gem 'capistrano-rails', group: :development
 
 gem 'pry'
+
 gem 'pry-rails'
+
 gem 'smarter_csv'
 
 group :development, :test do
@@ -49,4 +51,6 @@ group :development, :test do
 
   # Ensure consistent styling
   gem 'rubocop', require: false
+
+  gem 'rspec-rails'
 end

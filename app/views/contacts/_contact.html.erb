@@ -1,13 +1,18 @@
 <div class="contact">
 	<div class="contact-element">
-		Name: <span class="full-name"><%= contact.full_name %></span></div>
+		Name: <span class="full-name"><%= contact.full_name %></span>
+	</div>
 	<div class="contact-element">
-		Email: <span class="email"><%= contact.email_address %></span></div>
+		Email: <span class="email"><%= contact.email_address %></span>
+	</div>
 	<div class="contact-element">
-		Phone: <span class="phone"><%= contact.display_phone_number %></span></div>
+		Phone: <span class="phone"><%= contact.display_phone_number %></span>
+	</div>
 	<div class="contact-element">
-		Company: <span class="company"><%= contact.company_name %></span></div>
+		Company: <span class="company"><%= contact.company_name %></span>
+	</div>
 	<div class="contact-element">
-		International: <span class="international"><%= contact.international %></span></div>
+		International: <span class="international"><%= contact.international %></span>
+	</div>
 	<%= link_to "Delete Contact", contact_path(contact), method: :delete, :class=>"delete" %>
 </div>
