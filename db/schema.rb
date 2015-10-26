@@ -14,13 +14,23 @@
 ActiveRecord::Schema.define(version: 20151023171209) do
 
   create_table "contacts", force: :cascade do |t|
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "email_address"
-    t.string   "phone_number"
-    t.string   "company_name"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.string   "first_name",    limit: 25, null: false
+    t.string   "last_name",     limit: 25, null: false
+    t.string   "email_address", limit: 50, null: false
+    t.string   "phone_number",  limit: 25, null: false
+    t.string   "company_name",  limit: 50, null: false
+    t.boolean  "international"
+    t.string   "extension"
+    t.datetime "created_at",               null: false
+    t.datetime "updated_at",               null: false
   end
+
+  add_index "contacts", ["company_name"], name: "index_contacts_on_company_name"
+  add_index "contacts", ["email_address"], name: "index_contacts_on_email_address"
+  add_index "contacts", ["extension"], name: "index_contacts_on_extension"
+  add_index "contacts", ["first_name"], name: "index_contacts_on_first_name"
+  add_index "contacts", ["international"], name: "index_contacts_on_international"
+  add_index "contacts", ["last_name"], name: "index_contacts_on_last_name"
+  add_index "contacts", ["phone_number"], name: "index_contacts_on_phone_number"
 
 end
