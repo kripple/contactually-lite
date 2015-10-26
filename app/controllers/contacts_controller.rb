@@ -21,11 +21,5 @@ class ContactsController < ApplicationController
 		redirect_to :root and return if !request.xhr?
 		render :nothing => true
 	end
-
-	def filter
-		if request.xhr?
-			binding.pry
-		end
-	end
 end
 
