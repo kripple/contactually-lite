@@ -4,4 +4,5 @@
 	Phone: <%= contact.display_phone_number %><br>
 	Company: <%= contact.company_name %><br>
 	International: <%= contact.international %><br>
+	<%= link_to "Delete Contact", contact_path(contact), method: :delete %>
 </div>

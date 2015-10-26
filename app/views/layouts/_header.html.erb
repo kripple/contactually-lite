@@ -3,4 +3,11 @@
 		<%= link_to("View All Contacts", :contacts) %>
 		<%= link_to("Upload File", :new_contact) %>
 	</nav>
+	<nav>
+		<%= link_to("International Contacts", :contacts_filter) %>
+		<%= link_to("Contacts with Extensions", :contacts_filter) %>
+		<%= link_to("Contacts with '.com' Email Addresses", :contacts_filter) %>
+		<%= link_to("Order by Email", :contacts_filter) %>
+	</nav>
 </header>
+

@@ -19,6 +19,9 @@ class ContactsController < ApplicationController
 	def destroy
 		if request.xhr?
 			binding.pry
+		else
+			Contact.find_by(id:params[:id]).destroy
+			redirect_to :root
 		end
 	end
 

@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'contacts#index'
 
+  post 'contacts/filter' => 'contacts#filter'
+
   resources :contacts
 
   # The priority is based upon order of creation: first created -> highest priority.
