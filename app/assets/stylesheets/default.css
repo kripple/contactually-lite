@@ -2,16 +2,6 @@
 	font-family: 'Open Sans', sans-serif;
 }
 
-div.contact {
-	border: 1px solid;
-	padding: 10px;
-	margin: 10px;
-	color: #474746;
-	box-shadow: 2px 2px 5px gray;
-	display:inline-block;
-	width: 44%;
-}
-
 #header {
 	left: 0;
 	right: 0;
@@ -37,7 +27,7 @@ div.contact {
 	color: black;
 }
 
-.container, .contacts-container {
+.contacts-container {
 	max-width: 800px;
 	min-width: 300px;
 	margin: 0 auto;
@@ -45,8 +35,24 @@ div.contact {
 }
 
 .contact {
+	border: 1px solid;
+	padding: 10px;
+	margin: 10px;
+	color: #474746;
+	box-shadow: 2px 2px 5px gray;
+	display:inline-block;
+	width: 44%;
 	background-color: #FFFFFD;
 	padding-bottom: 20px;
+}
+
+.container {
+	top:80px;
+	left:35%;
+	width:30%;
+	position: absolute;
+	padding: 10px 20px;
+	box-shadow: 2px 2px 5px gray;
 }
 
 
