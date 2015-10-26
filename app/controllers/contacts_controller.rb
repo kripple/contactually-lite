@@ -30,10 +30,5 @@ class ContactsController < ApplicationController
 			binding.pry
 		end
 	end
-
-	private
-
-	def contact_params
-	end
 end
 
