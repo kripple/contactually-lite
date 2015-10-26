@@ -1,0 +1,6 @@
+<div class="container">
+<%= form_for @contact, url: contacts_path do |f| %>
+  <p><%= f.file_field :file, :class=>"form-field" %></p>
+  <p><%= f.submit "Upload", :class=>"upload-button" %></p>
+<% end %>
+</div>

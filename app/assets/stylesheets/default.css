@@ -1,0 +1,60 @@
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+#header {
+	left: 0;
+	right: 0;
+	top: 0;
+  height: 40px;
+  box-shadow: 2px 2px 5px gray;
+	position: fixed;
+	font-size: 16px;
+	padding-top: 16px;
+	background-color: white;
+}
+
+#header a {
+	text-decoration: none;
+	display: inline-block;
+  width: 16%;
+  text-align: center;
+  white-space: nowrap;
+  color: gray;
+}
+
+#header a:hover {
+	color: black;
+}
+
+.contacts-container {
+	max-width: 800px;
+	min-width: 300px;
+	margin: 0 auto;
+	padding: 70px 8% 40px 8%;
+}
+
+.contact {
+	border: 1px solid;
+	padding: 10px;
+	margin: 10px;
+	color: #474746;
+	box-shadow: 2px 2px 5px gray;
+	display:inline-block;
+	width: 44%;
+	background-color: #FFFFFD;
+	padding-bottom: 20px;
+}
+
+.container {
+	top:80px;
+	left:35%;
+	width:30%;
+	position: absolute;
+	padding: 10px 20px;
+	box-shadow: 2px 2px 5px gray;
+}
+
+
+
+
