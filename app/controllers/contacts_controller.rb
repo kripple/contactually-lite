@@ -17,12 +17,9 @@ class ContactsController < ApplicationController
 	end
 
 	def destroy
-		if request.xhr?
-			binding.pry
-		else
-			Contact.find_by(id:params[:id]).destroy
-			redirect_to :root
-		end
+		Contact.find_by(id:params[:id]).destroy
+		redirect_to :root and return if !request.xhr?
+		render :nothing => true
 	end
 
 	def filter
