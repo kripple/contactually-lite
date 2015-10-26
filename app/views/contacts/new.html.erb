@@ -1,4 +1,6 @@
+<div class="container">
 <%= form_for @contact, url: contacts_path do |f| %>
   <%= f.file_field :file %>
   <%= f.submit "Upload" %>
 <% end %>
+</div>

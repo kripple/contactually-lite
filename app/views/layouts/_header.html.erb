@@ -2,12 +2,10 @@
 	<nav>
 		<%= link_to("View All Contacts", :contacts, :class=> "view-all") %>
 		<%= link_to("Upload File", :new_contact) %>
-	</nav>
-	<nav>
-		<%= link_to("International Contacts", :root, :class=> "filter-international") %>
-		<%= link_to("Contacts with Extensions", :root, :class=> "filter-extensions") %>
-		<%= link_to("Contacts with '.com' Email Addresses", :root, :class=> "filter-dot-com") %>
-		<%= link_to("Order by Email", :root, :class=> "filter-email-order") %>
+		<%= link_to("International Only", :root, :class=> "filter-international") %>
+		<%= link_to("Extensions Only", :root, :class=> "filter-extensions") %>
+		<%= link_to(".com Emails", :root, :class=> "filter-dot-com") %>
+		<%= link_to("Sort by Email", :root, :class=> "filter-email-order") %>
 	</nav>
 </header>
 
